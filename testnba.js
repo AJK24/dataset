@@ -67,9 +67,9 @@ print('\n');
 
 ///FILTER
 //print list of pointguards
-print(JSON.stringify(filter(players, function(item){
-	if(item.Position == "PG"){
-		return item.Name;
+print(JSON.stringify(filter(players, function(players){
+	if(players.Position == "PG"){
+		return players.Name;
 	}
 }))); 
 
@@ -79,18 +79,19 @@ print('\n');
 
 //MAP
 //
-var celtic = players.filter(function(person) {
-	if(players.TeamDrafted == "Celtics"){
-		return players.Name;
+var celtic = (filter(players, function(person) {
+	if(person.TeamDrafted == "Bucks"){
+		return person.Name;
 	}
-});
+}));
 
 print(celtic);
+print('\n');
 
 
 //print new array of players who played for that team.
-print(map(celtic, function(){
-	return players.Name;
+print(map(celtic, function(celtic){
+	return celtic.Name;
 	
 }));
 
