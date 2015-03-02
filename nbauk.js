@@ -3,30 +3,35 @@
 //February 2015
 //This is a data set of basketball players who played at Kentucky and played in the NBA from the past 15 years - only including players who have been drafted
 
-players =[ '{ "Name": "James Young", "Year Drafted": 2014, "Round Selected": "1st", "Years Pro": "1", "Team Drafted": "Celtics","Position": "SG" }', 
-	'{ "Name": "Julius Randle", "Year Drafted": 2014 , "Round Selected": "1st", "Years Pro": 1 , "Team Drafted": "Lakers","Position": "PF" }',
-       	'{ "Name": "Archie Goodwin", "Year Drafted": 2013 , "Round Selected": "1st", "Years Pro": "2", "Team Drafted": "Thunder", "Position": "SG" }',
-       	'{ "Name": "Nerlens Noel", "Year Drafted": 2013 , "Round Selected": "1st", "Years Pro": "2", "Team Drafted": "76ers", "Position": "C"}',
-       	'{ "Name": "Darius Miller", "Year Drafted": 2012 , "Round Selected": "2nd", "Years Pro": "3", "Team Drafted": "Pelicans", "Position": "SG" }',
-       	'{"Name": "Doron Lamb", "Year Drafted":  2012 , "Round Selected": "2nd", "Years Pro": "3", "Team Drafted": "Bucks", "Position": "SG" }',
-	'{ "Name": "Marquis Teague", "Year Drafted": 2012 , "Round Selected": "1st", "Years Pro": "3", "Team Drafted": "Bulls", "Position": "PG" }',
-	'{ "Name": "Terrence Jones", "Year Drafted": 2012 , "Round Selected": "1st", "Years Pro": "3", "Team Drafted": "Rockets", "Position": "PF" }',
-	'{ "Name": "Michael Kidd-Gilchrist", "Year Drafted": 2012 , "Round Selected": "1st", "Years Pro": "3", "Team Drafted": "Hornets", "Position": "SF" }',
-	'{ "Name": "Anthony Davis", "Year Drafted": 2012 , "Round Selected": "1st", "Years Pro": "3", "Team Drafted": "Pelicans", "Position": "PF" }', 
-	'{ "Name": "Deandre Liggins", "Year Drafted": 2011 , "Round Selected": "2nd", "Years Pro": "4", "Team Drafted": "Magic", "Position": "SF" }', 
-	'{ "Name": "Josh Harrellson", "Year Drafted": 2011 , "Round Selected": "2nd", "Years Pro": "4", "Team Drafted": "Pelicans", "Position": "SF" }', 
-	'{ "Name": "Brandon Knight", "Year Drafted": 2011 , "Round Selected": "1st", "Years Pro": "4", "Team Drafted": "Pistons", "Position": "PG" }', 
-	'{ "Name": "Enes Kanter", "Year Drafted": 2011 , "Round Selected": "1st", "Years Pro": "4", "Team Drafted": "Jazz", "Position": "C"}', 
-	'{ "Name": "Daniel Orton", "Year Drafted": 2010 , "Round Selected": "1st", "Years Pro": "5", "Team Drafted": "Magic", "Position": "C" }', 
-	'{"Name": "Eric Bledsoe", "Year Drafted": 2010, "Round Selected": "1st","Years Pro": "5", "Team Drafted": "Thunder", "Position": "PG" }',
-       	'{ "Name": "Patrick Patterson", "Year Drafted": 2010 , "Round Selected": "1st", "Years Pro": "5", "Team Drafted": "Rockets", "Position": "PG" }',
-       	'{ "Name":"Demarcus Cousins", "Year Drafted": 2010 , "Round Selected": "1st", "Years Pro": "5", "Team Drafted": "Kings", "Position": "C" }',
-       	'{ "Name": "John Wall", "Year Drafted": 2010 , "Round Selected": "1st", "Years Pro": "5","Team Drafted": "Wizards", "Position": "PG" }', 
-	'{ "Name": "Jodie Meeks","Year Drafted": 2009 , "Round Selected": "2nd", "Years Pro": "6", "Team Drafted": "Bucks", "Position": "SG" }',
-       	'{ "Name": "Joe Crawford", "Year Drafted": 2008 , "Round Selected": "2nd", "Years Pro": "7", "Team Drafted": "Lakers", "Position": "SF" }', 
-	'{ "Name": "Rajon Rondo", "Year Drafted": 2006 , "Round Selected": "1st", "Years Pro": "9", "Team Drafted": "Suns","Position": "PG" }',
-       	'{ "Name": "Keith Bogans", "Year Drafted": 2003 , "RoundSelected": "2nd", "Years Pro": "12", "Team Drafted": "Bucks", "Position": "SG"}',
-       	'{ "Name": "Tayshaun Prince, "Year Drafted": 2002 , "Round Selected":"1st", "Years Pro": "13", "Team Drafted": "Pistons", "Position": "SF" }', 
-	'{"Name": "Michael Bradley", "Year Drafted": 2001 , "Round Selected": "1st","Years Pro": "5", "Team Drafted": "Raptors", "Position": "PF" }']
 
-module.exports = UK;
+
+var UK = "[\n " +  [ '{ "Name": "James Young", "YearDrafted": 2014, "RoundSelected": "1st", "YearsPro": "1", "TeamDrafted": "Celtics","Position": "SG" }', 
+	'{ "Name": "Julius Randle", "YearDrafted": 2014 , "RoundSelected": "1st", "YearsPro": 1 , "TeamDrafted": "Lakers","Position": "PF" }',
+       	'{ "Name": "ArchieGoodwin", "YearDrafted": 2013 , "RoundSelected": "1st", "YearsPro": "2", "TeamDrafted": "Thunder", "Position": "SG" }',
+       	'{ "Name": "Nerlens Noel", "YearDrafted": 2013 , "RoundSelected": "1st", "YearsPro": "2", "TeamDrafted": "76ers", "Position": "C"}',
+       	'{ "Name": "Darius Miller", "YearDrafted": 2012 , "RoundSelected": "2nd", "YearsPro": "3", "TeamDrafted": "Pelicans", "Position": "SG" }',
+       	'{"Name": "Doron Lamb", "YearDrafted":  2012 , "RoundSelected": "2nd", "YearsPro": "3", "TeamDrafted": "Bucks", "Position": "SG" }',
+	'{ "Name": "Marquis Teague", "YearDrafted": 2012 , "RoundSelected": "1st", "YearsPro": "3", "TeamDrafted": "Bulls", "Position": "PG" }',
+	'{ "Name": "Terrence Jones", "YearDrafted": 2012 , "RoundSelected": "1st", "YearsPro": "3", "TeamDrafted": "Rockets", "Position": "PF" }',
+	'{ "Name": "Michael Kidd-Gilchrist", "YearDrafted": 2012 , "RoundSelected": "1st", "YearsPro": "3", "TeamDrafted": "Hornets", "Position": "SF" }',
+	'{ "Name": "Anthony Davis", "YearDrafted": 2012 , "RoundSelected": "1st", "YearsPro": "3", "TeamDrafted": "Pelicans", "Position": "PF" }', 
+	'{ "Name": "Deandre Liggins", "YearDrafted": 2011 , "RoundSelected": "2nd", "YearsPro": "4", "TeamDrafted": "Magic", "Position": "SF" }', 
+	'{ "Name": "Josh Harrellson", "YearDrafted": 2011 , "RoundSelected": "2nd", "YearsPro": "4", "TeamDrafted": "Pelicans", "Position": "SF" }', 
+	'{ "Name": "Brandon Knight", "YearDrafted": 2011 , "RoundSelected": "1st", "YearsPro": "4", "TeamDrafted": "Pistons", "Position": "PG" }', 
+	'{ "Name": "Enes Kanter", "YearDrafted": 2011 , "RoundSelected": "1st", "YearsPro": "4", "TeamDrafted": "Jazz", "Position": "C"}', 
+	'{ "Name": "DanielOrton", "YearDrafted": 2010 , "RoundSelected": "1st", "YearsPro": "5", "TeamDrafted": "Magic", "Position": "C" }', 
+	'{"Name": "Eric Bledsoe", "YearDrafted": 2010, "RoundSelected": "1st","YearsPro": "5", "TeamDrafted": "Thunder", "Position": "PG" }',
+       	'{ "Name": "Patrick Patterson", "YearDrafted": 2010 , "RoundSelected": "1st", "YearsPro": "5", "TeamDrafted": "Rockets", "Position": "PG" }',
+       	'{ "Name":"Demarcus Cousins", "YearDrafted": 2010 , "RoundSelected": "1st", "YearsPro": "5", "TeamDrafted": "Kings", "Position": "C" }',
+       	'{ "Name": "John Wall", "YearDrafted": 2010 , "RoundSelected": "1st", "YearsPro": "5","TeamDrafted": "Wizards", "Position": "PG" }', 
+	'{ "Name": "Jodie Meeks","YearDrafted": 2009 , "RoundSelected": "2nd", "YearsPro": "6", "TeamDrafted": "Bucks", "Position": "SG" }',
+       	'{ "Name": "Joe Crawford", "YearDrafted": 2008 , "RoundSelected": "2nd", "YearsPro": "7", "TeamDrafted": "Lakers", "Position": "SF" }', 
+	'{ "Name": "Rajon Rondo", "YearDrafted": 2006 , "RoundSelected": "1st", "YearsPro": "9", "TeamDrafted": "Suns","Position": "PG" }',
+       	'{ "Name": "Keith Bogans", "YearDrafted": 2003 , "RoundSelected": "2nd", "YearsPro": "12", "TeamDrafted": "Bucks", "Position": "SG"}',
+       	'{ "Name": "Tayshaun Prince", "YearDrafted": 2002 , "RoundSelected":"1st", "YearsPro": "13", "TeamDrafted": "Pistons", "Position": "SF" }', 
+	'{"Name": "Michael Bradley", "YearDrafted": 2001 , "RoundSelected": "1st","YearsPro": "5", "TeamDrafted": "Raptors", "Position": "PF" }'].join(",\n ") + "\n]";
+
+if(typeof module != "undefined" && module.exports){
+	module.exports = UK;
+}
+
