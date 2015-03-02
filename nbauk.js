@@ -6,7 +6,7 @@
 
 
 var UK = "[\n " +  [ '{ "Name": "James Young", "YearDrafted": 2014, "RoundSelected": "1st", "YearsPro": "1", "TeamDrafted": "Celtics","Position": "SG" }', 
-	'{ "Name": "Julius Randle", "YearDrafted": 2014 , "RoundSelected": "1st", "YearsPro": 1 , "TeamDrafted": "Lakers","Position": "PF" }',
+	'{ "Name": "Julius Randle", "YearDrafted": 2014 , "RoundSelected": "1st", "YearsPro": "1" , "TeamDrafted": "Lakers","Position": "PF" }',
        	'{ "Name": "ArchieGoodwin", "YearDrafted": 2013 , "RoundSelected": "1st", "YearsPro": "2", "TeamDrafted": "Thunder", "Position": "SG" }',
        	'{ "Name": "Nerlens Noel", "YearDrafted": 2013 , "RoundSelected": "1st", "YearsPro": "2", "TeamDrafted": "76ers", "Position": "C"}',
        	'{ "Name": "Darius Miller", "YearDrafted": 2012 , "RoundSelected": "2nd", "YearsPro": "3", "TeamDrafted": "Pelicans", "Position": "SG" }',
