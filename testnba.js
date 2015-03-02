@@ -17,17 +17,24 @@ function filter(array, test) {
 	      return passed;
 }
 
-
-
-
-
-
-//used to reduce the array to the number of players who played past 2010
-function getName(name){
-	if(players.Name === name){
-		return players.Name;
-	}
+//map
+function map(array, transform) {
+	  var mapped = [];
+	    for (var i = 0; i < array.length; i++)
+		        mapped.push(transform(array[i]));
+	      return mapped;
 }
+
+//reduce
+function reduce(array, combine, start) {
+	  var current = start;
+	    for (var i = 0; i < array.length; i++)
+		        current = combine(current, array[i]);
+	      return current;
+}
+
+
+
 
 
 //returns the name of the team who drafted the player based on who the user wants to see
@@ -67,9 +74,25 @@ print(JSON.stringify(filter(players, function(item){
 }))); 
 
 
+print('\n');
+
+
 //MAP
+//
+var celtic = players.filter(function(person) {
+	if(players.TeamDrafted == "Celtics"){
+		return players.Name;
+	}
+});
+
+print(celtic);
+
+
 //print new array of players who played for that team.
-print(players.map(getteam("Raptors")));
+print(map(celtic, function(){
+	return players.Name;
+	
+}));
 
 
 
